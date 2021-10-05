@@ -22,3 +22,9 @@ enter a number:4
 ****
 
 """
+
+boxdim = input("Enter a number:")
+boxdim = int(boxdim)
+
+for i in range(boxdim):
+    print("*" * boxdim )
