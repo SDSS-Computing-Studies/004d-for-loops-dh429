@@ -17,3 +17,22 @@ example:
 enter a number: 4
 the sum of the series is 1234
 """
+
+number = input("Enter a number:")
+number = int(number)
+
+base = 1
+
+add = "1"
+
+for i in range(number):
+    if i == 0:
+        add = add + "1"
+        add = int(add)
+    else:
+        base = base + add
+        add = str(add)
+        add = add + "1"
+        add = int(add)
+
+print(f"the sum of the series is {base}")
